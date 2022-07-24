@@ -1,0 +1,8 @@
+Suppose you have made changes to a file, then decide you want to undo them. Your text editor may be able to do this,
+but a more reliable way is to let Git do the work. The command:
+
+git checkout -- filename
+will discard the changes that have not yet been staged.
+(The double dash -- must be there to separate the git checkout command from the names of the file or files you want to recover.)
+
+Use this command carefully: once you discard changes in this way, they are gone forever.
